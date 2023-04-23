@@ -1,52 +1,54 @@
-% !TEX program = xelatex
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{张丛鑫}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+  \email{yuanbin2014@gmail.com} \textperiodcentered\
+  \phone{(+86) 131-221-87xxx} \textperiodcentered\
   \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{信阳职业技术学院}, 信阳}{2019 -- 2022}
+\textit{专科}\ 大数据技术与应用
+\datedsubsection{\textbf{郑州经贸学院}, 郑州}{2022 -- 至今}
+\textit{本科}\ 数据科学与大数据技术
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{小莱税务}}{2021年7月 -- 至今}
+\role{SSM, Linux}{个人项目}
+\begin{onehalfspacing}
+基于华为鲲鹏平台的税务管理系统
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item 采用业界主流的技术路线，B/S架构，遵循标准的 “表现层－逻辑层－数据层”三层次结构。
+  \item 遵循统一的国家规范公文格式和交换接口标准。重视用户界面简洁大方、功能齐备、美观实用，提示准确，以方便用户操作。
+  \item 系统对大容量数据的查询和更新等操作也在段时间内迅速完成。有比较容易地根据企业要求做适应调整，扩充和删减。
+  \item 采用最成熟安全加密技术，保证数据的安全性。系统提供日志功能机模块操作记录，管理员能够维护数据安全。
 \end{itemize}
+\end{onehalfspacing}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2022年6月 -- 至今}
+\role{SpringBoot}{个人项目}
+\begin{onehalfspacing}
+Kob自动对战平台
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item 前后端分离模式(SpringBoot实现后端，Vue3实现Web端)
+  \item 匹配界面（微服务）、实况直播界面（WebSocket协议）
+  \item 支持 自定义AI
 \end{itemize}
-
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
-\end{itemize}
+\end{onehalfspacing}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -55,22 +57,22 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ Skills}
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item 编程语言: Java == Scala > Python > C++
+  \item 平台: Linux
+  \item 开发: Windows
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
+\section{\faHeartO\ 获奖情况}
+\datedline{\textit{Python C组 国三}, 蓝桥杯比赛}{2022 年 6 月}
+\datedline{\textit{大数据技术赛项 二等奖}, 职业技能大赛}{2021 年 12 月}
 
-\section{\faInfo\ Miscellaneous}
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item 语言: 英语 - 熟练(TOEFL xxx)
 \end{itemize}
 
 %% Reference
